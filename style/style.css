@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Bebas Neue, sans-serif;
+  background: whitesmoke;
+}
+
+nav {
+  top: 0;
+  position: fixed;
+  text-align: center;
+  width: 100vw;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+}
+
+ul a, ul li {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+  text-decoration-style: none;
+  padding: 0 10px;
+  color: black;
+  font-size: 1.8rem;
+}
+
+ul a {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+ul a:hover {
+  background: rgba(0,0,0,0.3);
+}
+
+ul li:hover {
+  color: white;
+}
+
+h1 {
+  font-size: 4rem;
+  letter-spacing: 5px;
+  margin: 5px 0;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(177, 177, 177, 0.7);
+}
+
+/* Loader */
+
+.loader img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Image Container */
+
+.image-container {
+  padding: 60px 0 0 0;
+  margin: 10px 20%;
+}
+
+.image-container img {
+  width: 100%;
+  margin: 5px 0;
+}
+
+/* Media Query: Large Smartphone */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .image-container {
+    margin: 10px;
+  }
+}
